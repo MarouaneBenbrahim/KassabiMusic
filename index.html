@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KASSABI | Official Site</title>
+  <meta name="description" content="KASSABI is based in California and born in Morocco, blending Tech House, Deep, Tech, and Minimal into high-energy storytelling sets.">
+  <meta name="theme-color" content="#040914">
+  <meta property="og:title" content="KASSABI | Official Site">
+  <meta property="og:description" content="From Morocco to California, KASSABI crafts high-energy sets with cultural fusion and emotional storytelling.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-main-lg.webp">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <link rel="preload" href="assets/fonts/SpaceGrotesk-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Sora-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/images/hero-main-lg.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="assets/videos/highlight-01.mp4" as="video" type="video/mp4">
+
+  <link rel="stylesheet" href="styles.css?v=20260211-1">
+  <script type="module" src="main.js?v=20260211-1"></script>
+</head>
+<body>
+
+  <div class="fx-background" aria-hidden="true">
+    <canvas id="particle-canvas"></canvas>
+    <div class="halo halo-a"></div>
+    <div class="halo halo-b"></div>
+    <div class="halo halo-c"></div>
+    <div class="noise-layer"></div>
+  </div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="KASSABI home">
+      <img src="assets/logo/kassabi-white.png" alt="KASSABI" width="222" height="36">
+    </a>
+
+    <button id="menu-btn" class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#showreel">Showreel</a>
+      <a href="#story">Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#venues">Venues</a>
+      <a href="#bookings">Bookings</a>
+    </nav>
+  </header>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
+
+  <main id="app">
+    <section id="home" class="section hero">
+      <article class="hero-copy reveal">
+        <p class="kicker">California | Morocco | Los Angeles | Casablanca</p>
+        <h1 class="hero-title" data-glow-text="KASSABI">KASSABI</h1>
+        <p class="genre">TECH HOUSE | DEEP | TECH | MINIMAL</p>
+        <p class="lead">
+          KASSABI is based in California and was born in Morocco. From the capital of Morocco to Los Angeles,
+          he blends groove, cultural fusion, and emotional storytelling into one unforgettable journey.
+        </p>
+
+        <div class="cta-row">
+          <a href="#showreel" class="btn btn-primary magnetic">Enter Showreel</a>
+          <a href="mailto:Bookings@kassabis.com?subject=Booking%20Inquiry%20-%20KASSABI" class="btn btn-secondary magnetic">Bookings@kassabis.com</a>
+        </div>
+
+        <ul class="facts">
+          <li>High-energy sets with a distinctive sound.</li>
+          <li>Shared the stage with big names in the industry.</li>
+          <li>Noticed by a Los Angeles based label.</li>
+        </ul>
+
+        <div class="eq" id="hero-eq" aria-hidden="true">
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+        </div>
+      </article>
+
+      <article class="hero-media reveal">
+        <div class="cinema-frame panel" id="hero-stage" aria-label="KASSABI highlights slideshow">
+          <figure class="hero-slide is-active" data-index="0" data-tag="Highlight 01" data-title="Main Stage Focus" data-video="assets/videos/highlight-01.mp4" data-poster="assets/videos/posters/highlight-01.jpg">
+            <img src="assets/images/hero-main-lg.webp" alt="KASSABI live on stage" width="1800" height="2700" fetchpriority="high">
+          </figure>
+          <figure class="hero-slide" data-index="1" data-tag="Highlight 02" data-title="Cinematic Portrait" data-video="assets/videos/highlight-02.mp4" data-poster="assets/videos/posters/highlight-02.jpg">
+            <img src="assets/images/hero-side-lg.webp" alt="KASSABI portrait with cyan and magenta lighting" width="1365" height="2048" loading="lazy">
+          </figure>
+          <figure class="hero-slide" data-index="2" data-tag="Highlight 03" data-title="Deck Precision" data-video="assets/videos/highlight-03.mp4" data-poster="assets/videos/posters/highlight-03.jpg">
+            <img src="assets/images/gallery-06-lg.webp" alt="KASSABI focused at the decks" width="1800" height="2700" loading="lazy">
+          </figure>
+          <figure class="hero-slide" data-index="3" data-tag="Highlight 01" data-title="Backstage Presence" data-video="assets/videos/highlight-01.mp4" data-poster="assets/videos/posters/highlight-01.jpg">
+            <img src="assets/images/gallery-07-lg.webp" alt="KASSABI backstage frame" width="1800" height="2700" loading="lazy">
+          </figure>
+          <figure class="hero-slide" data-index="4" data-tag="Highlight 02" data-title="Crowd Atmosphere" data-video="assets/videos/highlight-02.mp4" data-poster="assets/videos/posters/highlight-02.jpg">
+            <img src="assets/images/hero-crowd-lg.webp" alt="Crowd in the venue" width="1080" height="607" loading="lazy">
+          </figure>
+          <figure class="hero-slide" data-index="5" data-tag="Highlight 03" data-title="Monochrome Energy" data-video="assets/videos/highlight-03.mp4" data-poster="assets/videos/posters/highlight-03.jpg">
+            <img src="assets/images/gallery-11-lg.webp" alt="KASSABI monochrome performance portrait" width="1800" height="2700" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="cinema-hud panel">
+          <div>
+            <p class="mini" id="hero-tag">Highlight 01</p>
+            <h2 class="hud-title" id="hero-slide-title">Main Stage Focus</h2>
+          </div>
+
+          <div class="hud-controls">
+            <button class="chip magnetic" id="hero-prev" type="button" aria-label="Previous highlight">Prev</button>
+            <button class="chip magnetic" id="hero-next" type="button" aria-label="Next highlight">Next</button>
+            <button class="chip chip-play magnetic js-open-video" id="hero-play" type="button" data-video="assets/videos/highlight-01.mp4" data-poster="assets/videos/posters/highlight-01.jpg" data-title="KASSABI | Highlight 01">Play Clip</button>
+          </div>
+
+          <div class="hud-progress" aria-hidden="true"><span id="hero-progress"></span></div>
+        </div>
+
+        <div class="thumb-strip" id="hero-thumbs" aria-label="Highlight thumbnails">
+          <button class="thumb is-active" data-slide="0" type="button" aria-label="Open highlight 1"><img src="assets/images/hero-main-md.webp" alt="Highlight thumbnail 1" width="1100" height="1650" loading="lazy"></button>
+          <button class="thumb" data-slide="1" type="button" aria-label="Open highlight 2"><img src="assets/images/hero-side-md.webp" alt="Highlight thumbnail 2" width="1100" height="1650" loading="lazy"></button>
+          <button class="thumb" data-slide="2" type="button" aria-label="Open highlight 3"><img src="assets/images/gallery-06-md.webp" alt="Highlight thumbnail 3" width="1100" height="1650" loading="lazy"></button>
+          <button class="thumb" data-slide="3" type="button" aria-label="Open highlight 4"><img src="assets/images/gallery-07-md.webp" alt="Highlight thumbnail 4" width="1100" height="1650" loading="lazy"></button>
+          <button class="thumb" data-slide="4" type="button" aria-label="Open highlight 5"><img src="assets/images/hero-crowd-md.webp" alt="Highlight thumbnail 5" width="1100" height="618" loading="lazy"></button>
+          <button class="thumb" data-slide="5" type="button" aria-label="Open highlight 6"><img src="assets/images/gallery-11-md.webp" alt="Highlight thumbnail 6" width="1100" height="1650" loading="lazy"></button>
+        </div>
+      </article>
+    </section>
+
+    <section id="showreel" class="section showreel">
+      <div class="section-head reveal">
+        <p class="section-kicker">Showreel</p>
+        <h2>Real Footage. Real Crowd Energy.</h2>
+      </div>
+
+      <div class="showreel-stage">
+        <article class="showreel-feature panel reveal" id="showreel-feature">
+          <video class="inline-video" id="showreel-feature-video" muted loop playsinline preload="metadata" poster="assets/videos/posters/highlight-02.jpg" data-inline-video>
+            <source src="assets/videos/highlight-02.mp4" type="video/mp4">
+          </video>
+
+          <div class="feature-scan" aria-hidden="true"></div>
+
+          <div class="clip-overlay">
+            <p class="mini" id="showreel-feature-tag">Clip 01</p>
+            <h3 id="showreel-feature-title">High-Energy Performance</h3>
+            <p id="showreel-feature-subtitle">Live crowd-driven groove and pressure.</p>
+          </div>
+
+          <button class="play-pill magnetic js-open-video" id="showreel-feature-play" type="button" data-video="assets/videos/highlight-02.mp4" data-poster="assets/videos/posters/highlight-02.jpg" data-title="KASSABI | Highlight 02">
+            <span class="dot" aria-hidden="true"></span>
+            Play Full Clip
+          </button>
+
+          <div class="feature-progress" aria-hidden="true"><span id="showreel-feature-progress"></span></div>
+        </article>
+
+        <aside class="showreel-queue">
+          <button class="queue-card panel magnetic reveal is-active" type="button" data-showreel-index="0" data-video="assets/videos/highlight-02.mp4" data-poster="assets/videos/posters/highlight-02.jpg" data-title="High-Energy Performance" data-subtitle="Live crowd-driven groove and pressure." data-tag="Clip 01">
+            <img src="assets/videos/posters/highlight-02.jpg" alt="Clip one poster" width="720" height="1280" loading="lazy">
+            <span class="queue-copy"><strong>Clip 01</strong><span>High-energy performance.</span></span>
+          </button>
+
+          <button class="queue-card panel magnetic reveal" type="button" data-showreel-index="1" data-video="assets/videos/highlight-01.mp4" data-poster="assets/videos/posters/highlight-01.jpg" data-title="Live Crowd Momentum" data-subtitle="Fast transitions and crowd response moments." data-tag="Clip 02">
+            <img src="assets/videos/posters/highlight-01.jpg" alt="Clip two poster" width="720" height="1280" loading="lazy">
+            <span class="queue-copy"><strong>Clip 02</strong><span>Live crowd momentum.</span></span>
+          </button>
+
+          <button class="queue-card panel magnetic reveal" type="button" data-showreel-index="2" data-video="assets/videos/highlight-03.mp4" data-poster="assets/videos/posters/highlight-03.jpg" data-title="Focused Groove Session" data-subtitle="Dark room staging with precise deck control." data-tag="Clip 03">
+            <img src="assets/videos/posters/highlight-03.jpg" alt="Clip three poster" width="720" height="1280" loading="lazy">
+            <span class="queue-copy"><strong>Clip 03</strong><span>Focused groove session.</span></span>
+          </button>
+        </aside>
+      </div>
+
+      <div class="showreel-thumbline panel reveal" id="showreel-thumbline" aria-label="Showreel quick select">
+        <button class="showreel-thumb is-active" type="button" data-showreel-index="0" aria-label="Select clip 1"><img src="assets/images/hero-main-md.webp" alt="Showreel thumb 1" width="1100" height="1650" loading="lazy"></button>
+        <button class="showreel-thumb" type="button" data-showreel-index="1" aria-label="Select clip 2"><img src="assets/images/hero-side-md.webp" alt="Showreel thumb 2" width="1100" height="1650" loading="lazy"></button>
+        <button class="showreel-thumb" type="button" data-showreel-index="2" aria-label="Select clip 3"><img src="assets/images/gallery-06-md.webp" alt="Showreel thumb 3" width="1100" height="1650" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="section-head reveal">
+        <p class="section-kicker">Story</p>
+        <h2>One Sound. Multiple Emotions.</h2>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-text panel reveal">
+          <p>
+            Known for high-energy sets, cultural fusion, and emotional storytelling through music, KASSABI moves both body and soul.
+          </p>
+          <p>
+            A seamless blend of North African rhythms and modern electronic beats defines his sound, from deep basslines and rolling percussion to focused minimal pressure.
+          </p>
+          <p>
+            After pursuing his dreams in the United States, he established a distinctive signature that fuses rhythms and melodies into energetic, immersive sets.
+          </p>
+          <p>
+            With undeniable talent and dedication to craft, KASSABI continues to rise through the nightlife scene.
+          </p>
+        </article>
+
+        <div class="story-points reveal">
+          <article class="point panel">
+            <p class="mini">Origin</p>
+            <h3>Born in Morocco</h3>
+            <p>From the capital of Morocco to international stages.</p>
+          </article>
+
+          <article class="point panel">
+            <p class="mini">Base</p>
+            <h3>Based in California</h3>
+            <p>Now performing with high-energy sets across Los Angeles and beyond.</p>
+          </article>
+
+          <article class="point panel">
+            <p class="mini">Signature</p>
+            <h3>Genre Fusion</h3>
+            <p>Tech House, Deep, Tech, and Minimal blended into one journey.</p>
+          </article>
+        </div>
+
+        <figure class="story-image panel reveal">
+          <img src="assets/images/gallery-11-lg.webp" alt="KASSABI performance in black and white" width="1800" height="2700" loading="lazy" data-lightbox>
+        </figure>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="section-head reveal">
+        <p class="section-kicker">Gallery</p>
+        <h2>Precision Frames</h2>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-01-md.webp" srcset="assets/images/gallery-01-md.webp 1100w, assets/images/gallery-01-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 01" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-02-md.webp" srcset="assets/images/gallery-02-md.webp 1100w, assets/images/gallery-02-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 02" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-03-md.webp" srcset="assets/images/gallery-03-md.webp 1100w, assets/images/gallery-03-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 03" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-04-md.webp" srcset="assets/images/gallery-04-md.webp 1100w, assets/images/gallery-04-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 04" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-05-md.webp" srcset="assets/images/gallery-05-md.webp 1100w, assets/images/gallery-05-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 05" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-06-md.webp" srcset="assets/images/gallery-06-md.webp 1100w, assets/images/gallery-06-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 06" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-07-md.webp" srcset="assets/images/gallery-07-md.webp 1100w, assets/images/gallery-07-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 07" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-08-md.webp" srcset="assets/images/gallery-08-md.webp 1100w, assets/images/gallery-08-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 08" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-09-md.webp" srcset="assets/images/gallery-09-md.webp 1100w, assets/images/gallery-09-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 09" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-10-md.webp" srcset="assets/images/gallery-10-md.webp 1100w, assets/images/gallery-10-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 10" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/gallery-11-md.webp" srcset="assets/images/gallery-11-md.webp 1100w, assets/images/gallery-11-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Live frame 11" width="1100" height="1650" loading="lazy" data-lightbox></button>
+        <button class="gallery-card panel reveal" type="button"><img src="assets/images/hero-crowd-md.webp" srcset="assets/images/hero-crowd-md.webp 1100w, assets/images/hero-crowd-lg.webp 1800w" sizes="(max-width: 760px) 100vw, (max-width: 1120px) 50vw, 25vw" alt="Crowd frame" width="1100" height="618" loading="lazy" data-lightbox></button>
+      </div>
+    </section>
+
+    <section id="venues" class="section venues">
+      <div class="section-head reveal">
+        <p class="section-kicker">Venues</p>
+        <h2>Stages and Night Programs</h2>
+      </div>
+
+      <div class="venue-loop panel reveal">
+        <div class="venue-track" id="venue-track">
+          <img src="assets/clubs/venue-01.webp" alt="Venue logo 1" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-02.webp" alt="Venue logo 2" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-03.webp" alt="Venue logo 3" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-04.webp" alt="Venue logo 4" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-05.webp" alt="Venue logo 5" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-06.webp" alt="Venue logo 6" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-07.webp" alt="Venue logo 7" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-08.webp" alt="Venue logo 8" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-09.webp" alt="Venue logo 9" width="300" height="120" loading="lazy">
+
+          <img src="assets/clubs/venue-01.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-02.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-03.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-04.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-05.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-06.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-07.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-08.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+          <img src="assets/clubs/venue-09.webp" alt="" aria-hidden="true" width="300" height="120" loading="lazy">
+        </div>
+      </div>
+
+      <div class="events-grid reveal">
+        <article class="event-card panel">
+          <p class="mini">Event</p>
+          <h3>Empire Cannabis / Terminal 5</h3>
+          <p>New York City</p>
+        </article>
+        <article class="event-card panel">
+          <p class="mini">Event</p>
+          <h3>Lost In Noise</h3>
+          <p>New Brunswick, New Jersey</p>
+        </article>
+        <article class="event-card panel">
+          <p class="mini">Event</p>
+          <h3>Hollywood Nights at Station 1640</h3>
+          <p>Hollywood Blvd, Los Angeles</p>
+        </article>
+        <article class="event-card panel">
+          <p class="mini">Event</p>
+          <h3>Avenue PB</h3>
+          <p>San Diego</p>
+        </article>
+        <article class="event-card panel">
+          <p class="mini">Event</p>
+          <h3>Los Globos</h3>
+          <p>Hollywood Blvd, Los Angeles</p>
+        </article>
+        <article class="event-card panel">
+          <p class="mini">Event</p>
+          <h3>Recollect LA</h3>
+          <p>DTLA</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="bookings" class="section booking">
+      <article class="booking-card panel reveal">
+        <img src="assets/logo/kassabi-white.png" alt="KASSABI" width="182" height="30">
+        <h2>Bookings</h2>
+        <p>For club nights, festivals, and private events, use the official booking contact below.</p>
+        <a class="booking-link magnetic" href="mailto:Bookings@kassabis.com?subject=Booking%20Inquiry%20-%20KASSABI">Bookings@kassabis.com</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>KASSABI</p>
+    <p>California | Morocco</p>
+    <a href="mailto:Bookings@kassabis.com?subject=Booking%20Inquiry%20-%20KASSABI">Bookings@kassabis.com</a>
+  </footer>
+
+  <div class="video-modal" id="video-modal" aria-hidden="true">
+    <button class="modal-backdrop" data-close-video type="button" aria-label="Close video"></button>
+    <div class="video-shell" id="video-shell" role="dialog" aria-modal="true" aria-label="Video player">
+      <button id="video-close" class="modal-close" type="button" aria-label="Close video">Close</button>
+      <video id="modal-video" controls playsinline preload="metadata"></video>
+    </div>
+  </div>
+
+  <div class="image-modal" id="image-modal" aria-hidden="true">
+    <button class="modal-backdrop" data-close-image type="button" aria-label="Close image"></button>
+    <div class="image-shell" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button id="image-close" class="modal-close" type="button" aria-label="Close image">Close</button>
+      <img id="lightbox-image" src="" alt="Gallery image preview">
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+</body>
+</html>
